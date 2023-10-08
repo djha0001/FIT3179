@@ -99,6 +99,14 @@
     </div>
     <p>Right hand tennis players have dominated the sport of tennis</p>
 
+    <!-- Fourth Vega-Lite Chart -->
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <div id="vis4" class="vis-container"></div>
+      </div>
+    </div>
+    <p>Right hand tennis players have dominated the sport of tennis</p>
+
 
   </div>
 
@@ -106,6 +114,7 @@
     var specVis1 = "Map.vl.json"; 
     var specVis2 = "Earnings.vl.json"; 
     var specVis3 = "Donut.vl.json";
+    var specVis4 = "stacked.vl.json";
 
     vegaEmbed('#vis1', specVis1, {
       "actions": false
@@ -124,6 +133,13 @@
     }).then(function (result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
+
+    vegaEmbed('#vis4', specVis4, {
+      "actions": false
+    }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+    
   </script>
 </body>
 
