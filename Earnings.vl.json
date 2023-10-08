@@ -1,0 +1,62 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/djha0001/FIT3179/main/Mens_Tennis_Grand_Slam_Winner.csv"
+  },
+  "width": 400,
+  "height": 300,
+  "title": "Prize Money Earnings(US Dollars)",
+  "encoding": {"x": {"field": "YEAR", "type": "temporal"}},
+  "layer": [
+    {
+      "encoding": {
+        "color": {"field": "TOURNAMENT", "type": "nominal"},
+        "y": {"field": "EARNINGS", "type": "quantitative"}
+      },
+      "layer": [
+        {"mark": "line"},
+        {
+          "transform": [{"filter": {"param": "hover", "empty": false}}],
+          "mark": "point"
+        }
+      ]
+    },
+    {
+      "transform": [
+        {"pivot": "TOURNAMENT", "value": "EARNINGS", "groupby": ["YEAR"]}
+      ],
+      "mark": "rule",
+      "encoding": {
+        "opacity": {
+          "condition": {"value": 0.3, "param": "hover", "empty": false},
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "YEAR",
+            "type": "temporal",
+            "timeUnit": "year",
+            "title": "Year"
+          },
+          {"field": "Australian Open", "type": "quantitative"},
+          {"field": "French Open", "type": "quantitative"},
+          {"field": "US Open", "type": "quantitative"},
+          {"field": "Wimbledon", "type": "quantitative"}
+        ]
+      },
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": ["YEAR"],
+            "nearest": true,
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
+        }
+      ]
+    }
+  ],
+  "config": {}
+}

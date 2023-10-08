@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Donut chart for left and right-handed winners with percentage in tooltip.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/djha0001/FIT3179/main/Mens_Tennis_Grand_Slam_Winner.csv"
+  },
+  "transform": [
+    {
+      "filter": "datum.WINNER_LEFT_OR_RIGHT_HANDED === 'left' || datum.WINNER_LEFT_OR_RIGHT_HANDED === 'right'"
+    },
+    {
+      "joinaggregate": [
+        {
+          "op": "count",
+          "field": "WINNER_LEFT_OR_RIGHT_HANDED",
+          "as": "total_count"
+        }
+      ]
+    },
+    {
+      "aggregate": [{"op": "count", "as": "count"}],
+      "groupby": ["WINNER_LEFT_OR_RIGHT_HANDED"]
+    }
+  ],
+  "mark": {"type": "arc", "innerRadius": 50},
+  "encoding": {
+    "theta": {"field": "count", "type": "quantitative"},
+    "color": {"field": "WINNER_LEFT_OR_RIGHT_HANDED", "type": "nominal"},
+    "tooltip": [
+      {
+        "field": "WINNER_LEFT_OR_RIGHT_HANDED",
+        "type": "nominal",
+        "title": "Winner Type"
+      },
+      {"field": "count", "type": "quantitative", "title": "Count"}
+    ]
+  },
+  "config": {}
+}
