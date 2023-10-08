@@ -1,0 +1,23 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/djha0001/FIT3179/main/Mens_Tennis_Grand_Slam_Winner.csv"
+  },
+  "transform": [
+    {"calculate": "datum.WINNER_NATIONALITY", "as": "nationality"},
+    {"calculate": "datum.YEAR", "as": "year"},
+    {"filter": "datum.nationality !== null"},
+    {"filter": "datum.year !== null"},
+    {
+      "aggregate": [{"op": "count", "field": "year", "as": "count"}],
+      "groupby": ["year", "nationality"]
+    }
+  ],
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "year", "type": "temporal", "title": "Year"},
+    "y": {"field": "count", "type": "quantitative", "title": "Number of Wins"},
+    "color": {"field": "nationality", "type": "nominal", "title": "Nationality"}
+  },
+  "config": {}
+}
