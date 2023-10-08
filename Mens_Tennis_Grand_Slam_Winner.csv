@@ -1,32 +1,32 @@
 YEAR,TOURNAMENT,WINNER,RUNNER-UP,WINNER_NATIONALITY,WINNER_ATP_RANKING,RUNNER-UP_ATP_RANKING,WINNER_LEFT_OR_RIGHT_HANDED,TOURNAMENT_SURFACE,EARNINGS,,COUNTRY_WINNERS,PERCENTAGE_OF_WINS
 2023,Australian Open,Novak Djokovic,Stefanos Tsitsipas,Serbian,1,3,right,Plexicushion Prestige,2050000,,United States of America,22.95
 2022,U.S. Open,Carlos Alcaraz,Casper Rudd,Spanish,2,5,right,DecoTurf - outdoors,2600000,,Argentina,2.05
-,Wimbledon,Novak Djokovic,Nick Kyrgios,Serbian,,25,right,Grass / Outdoor,2507460,,Australia,22.95
-,French Open,Rafael Nadal,Casper Rudd,Spanish,5,8,left,Clay,1870000,,Austria,0.68
-,Australian Open,Rafael Nadal,Daniil Medvedev,Spanish,5,2,left,Plexicushion Prestige,4400000,,Brazil,1.03
+2022,Wimbledon,Novak Djokovic,Nick Kyrgios,Serbian,,25,right,Grass / Outdoor,2507460,,Australia,22.95
+2022,French Open,Rafael Nadal,Casper Rudd,Spanish,5,8,left,Clay,1870000,,Austria,0.68
+2022,Australian Open,Rafael Nadal,Daniil Medvedev,Spanish,5,2,left,Plexicushion Prestige,4400000,,Brazil,1.03
 2021,U.S. Open,Daniil Medvedev,Novak Djokovic,Russian,2,1,right,DecoTurf - outdoors,2500000,,United Kingdom,1.03
-,Wimbledon,Novak Djokovic,Matteo Berrettini,Serbian,1,7,right,Grass / Outdoor,1700000,,Croatia,0.68
-,French Open,Novak Djokovic,Stefanos Tsitsipas,Serbian,1,4,right,Clay,1400000,,Czech Republic,1.37
-,Australian Open,Novak Djokovic,Daniil Medvedev,Serbian,1,2,right,Plexicushion Prestige,2875000,,Czechoslovakia,3.77
+2021,Wimbledon,Novak Djokovic,Matteo Berrettini,Serbian,1,7,right,Grass / Outdoor,1700000,,Croatia,0.68
+2021,French Open,Novak Djokovic,Stefanos Tsitsipas,Serbian,1,4,right,Clay,1400000,,Czech Republic,1.37
+2021,Australian Open,Novak Djokovic,Daniil Medvedev,Serbian,1,2,right,Plexicushion Prestige,2875000,,Czechoslovakia,3.77
 2020,French Open,Rafael Nadal,Novak Djokovic,Spanish,2,1,left,Clay,1600000,,Ecuador,0.34
-,U.S. Open,Dominic Thiem,Alexander Zverev,Austrian,3,7,right,DecoTurf - outdoors,2500000,,France,0.34
-,Australian Open,Novak Djokovic,Dominic Thiem,Serbian,1,3,right,Plexicushion Prestige,4120000,,Germany,2.4
+2020,U.S. Open,Dominic Thiem,Alexander Zverev,Austrian,3,7,right,DecoTurf - outdoors,2500000,,France,0.34
+2020,Australian Open,Novak Djokovic,Dominic Thiem,Serbian,1,3,right,Plexicushion Prestige,4120000,,Germany,2.4
 2019,U.S. Open,Rafael Nadal,Daniil Medvedev,Spanish,1,5,left,DecoTurf - outdoors,3850000,,Italy,1.03
-,Wimbledon,Novak Djokovic,Roger Federer,Serbian,2,3,right,Grass / Outdoor,2350000,,Mexico,0.34
-,French Open,Rafael Nadal,Dominic Thiem,Spanish,1,4,left,Clay,2300000,,Peru,0.68
-,Australian Open,Novak Djokovic,Rafael Nadal,Serbian,2,1,right,Plexicushion Prestige,4100000,,Romania,0.68
+2019,Wimbledon,Novak Djokovic,Roger Federer,Serbian,2,3,right,Grass / Outdoor,2350000,,Mexico,0.34
+2019,French Open,Rafael Nadal,Dominic Thiem,Spanish,1,4,left,Clay,2300000,,Peru,0.68
+2019,Australian Open,Novak Djokovic,Rafael Nadal,Serbian,2,1,right,Plexicushion Prestige,4100000,,Romania,0.68
 2018,U.S. Open,Novak Djokovic,Juan Martin del Potro,Serbian,1,5,right,DecoTurf - outdoors,3800000,,Russia,1.71
-,Wimbledon,Novak Djokovic,Kevin Anderson,Serbian,1,6,right,Grass / Outdoor,2250000,,Serbia,7.53
-,French Open,Rafael Nadal,Dominic Thiem,Spanish,2,8,left,Clay,2200000,,Spain,11.3
-,Australian Open,Roger Federer,Marin ili,Swiss,3,7,right,Plexicushion Prestige,4000000,,Sweden,8.9
+2018,Wimbledon,Novak Djokovic,Kevin Anderson,Serbian,1,6,right,Grass / Outdoor,2250000,,Serbia,7.53
+2018,French Open,Rafael Nadal,Dominic Thiem,Spanish,2,8,left,Clay,2200000,,Spain,11.3
+2018,Australian Open,Roger Federer,Marin ili,Swiss,3,7,right,Plexicushion Prestige,4000000,,Sweden,8.9
 2017,U.S. Open,Rafael Nadal,Kevin Anderson,Spanish,1,14,left,DecoTurf - outdoors,3700000,,Switzerland,7.88
-,Wimbledon,Roger Federer,Marin ili,Swiss,2,6,right,Grass / Outdoor,2200000,,Netherlands,0.34
-,French Open,Rafael Nadal,Stan Wawrinka,Spanish,1,9,left,Clay,2100000,,,
-,Australian Open,Roger Federer,Rafael Nadal,Swiss,2,1,right,Plexicushion Prestige,3700000,,,
+2017,Wimbledon,Roger Federer,Marin ili,Swiss,2,6,right,Grass / Outdoor,2200000,,Netherlands,0.34
+2017,French Open,Rafael Nadal,Stan Wawrinka,Spanish,1,9,left,Clay,2100000,,,
+2017,Australian Open,Roger Federer,Rafael Nadal,Swiss,2,1,right,Plexicushion Prestige,3700000,,,
 2016,U.S. Open,Stan Wawrinka,Novak Djokovic,Swiss,4,2,right,DecoTurf - outdoors,3500000,,,
-,Wimbledon,Andy Murray,Milos Raonic,British,1,3,right,Grass / Outdoor,2000000,,,
-,French Open,Novak Djokovic,Andy Murray,Serbian,2,1,right,Clay,2000000,,,
-,Australian Open,Novak Djokovic,Andy Murray,Serbian,2,1,right,Plexicushion Prestige,3400000,,,
+2016,Wimbledon,Andy Murray,Milos Raonic,British,1,3,right,Grass / Outdoor,2000000,,,
+2016,French Open,Novak Djokovic,Andy Murray,Serbian,2,1,right,Clay,2000000,,,
+2016,Australian Open,Novak Djokovic,Andy Murray,Serbian,2,1,right,Plexicushion Prestige,3400000,,,
 2015,U.S. Open,Novak Djokovic,Roger Federer,Serbian,1,3,right,DecoTurf - outdoors,3300000,,,
 2015,Wimbledon,Novak Djokovic,Roger Federer,Serbian,1,3,right,Grass / Outdoor,1880000,,,
 2015,French Open,Stan Wawrinka,Novak Djokovic,Swiss,4,1,right,Clay,1800000,,,
