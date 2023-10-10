@@ -1,67 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="https://cdn.jsdelivr.net/npm/vega@5.25.0"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.15.0"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.22.2"></script>
+    <title>Visualizations</title>
+    <!-- Add the Vega and Vega-Lite scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.21.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.21.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.21.1"></script>
 </head>
 <body>
-  <div id="vis"/>
-  <script>
-    const spec = {
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 400,
-  "height": 300,
-  "title": "Prize Money Earnings (US Dollars)",
-  "data": {
-    "url": "https://raw.githubusercontent.com/djha0001/FIT3179/main/Mens_Tennis_Grand_Slam_Winner.csv"
-  },
-  "layer": [
-    {
-      "mark": "line",
-      "params": [
-        {
-          "name": "Opens",
-          "select": {"type": "point", "fields": ["TOURNAMENT"]},
-          "bind": "legend"
-        }
-      ],
-      "encoding": {
-        "x": {"timeUnit": "year", "field": "YEAR", "title": "Year"},
-        "y": {"field": "EARNINGS", "type": "quantitative", "title": "Earnings"},
-        "color": {"field": "TOURNAMENT"},
-        "opacity": {"condition": {"param": "Opens", "value": 1}, "value": 0.2},
-        "tooltip": [
-          {
-            "field": "YEAR",
-            "type": "temporal",
-            "title": "Year",
-            "timeUnit": "year"
-          },
-          {
-            "field": "EARNINGS",
-            "type": "quantitative",
-            "title": "Earnings",
-            "format": "$,.2f"
-          },
-          {"field": "TOURNAMENT", "type": "nominal", "title": "Tournament"}
-        ]
-      }
-    },
-    {
-      "mark": {
-        "type": "text",
-        "align": "right",
-        "baseline": "bottom",
-        "dx": 70,
-        "dy": -115
-      },
-      "encoding": {"text": {"value": "Highest Earnings ever made -->"}}
-    }
-  ],
-  "config": {}
-};
-    vegaEmbed("#vis", spec, {mode: "vega-lite"}).then(console.log).catch(console.warn);
-  </script>
+    <h1>Visualization 1: Map</h1>
+    <div id="map"></div>
+
+    <h1>Visualization 2: Line Chart</h1>
+    <div id="lineChart"></div>
+
+    <script>
+        // Define the GitHub URLs for your Vega-Lite JSON files
+        const mapUrl = 'https://raw.githubusercontent.com/djha0001/FIT3179/main/Map.vl.json';
+        const lineChartUrl = 'https://raw.githubusercontent.com/djha0001/FIT3179/main/TourEarnings.vl.json';
+
+        // Embed the map visualization
+        vegaEmbed('#map', mapUrl)
+            .then(result => {})
+            .catch(error => console.error(error));
+
+        // Embed the line chart visualization
+        vegaEmbed('#lineChart', lineChartUrl)
+            .then(result => {})
+            .catch(error => console.error(error));
+    </script>
 </body>
 </html>
