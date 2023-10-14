@@ -87,13 +87,44 @@
       </div>
     </div>
 
+    <!-- Grid for the visualizations -->
+    <div class="grid-container">
+
+      <!-- Visualization 3 (Top 10 Australian Open Winners) -->
+      <div class="pure-u-1-2">
+        <div id="vis3" class="vis-container"></div>
+      </div>
+
+      <!-- Visualization 4 (Top 10 French Open Winners) -->
+      <div class="pure-u-1-2">
+        <div id="vis4" class="vis-container"></div>
+      </div>
+
+      <!-- Visualization 5 (Top 10 US Open Winners) -->
+      <div class="pure-u-1-2">
+        <div id="vis5" class="vis-container"></div>
+      </div>
+
+      <!-- Visualization 6 (Top 10 Wimbledon Winners) -->
+      <div class="pure-u-1-2">
+        <div id="vis6" class="vis-container"></div>
+      </div>
+
+    </div>
+
+
+    
+
 
   </div>
 
   <script type="text/javascript">
     var specVis1 = "TourEarnings.json";
     var specVis2 = "Map.vl.json";
-    
+    var specVis3 = "Top10Aus.json";
+    var specVis4 = "Top10French.json";
+    var specVis5 = "Top10US.json";
+    var specVis6 = "Top10Wimbledon.json";
 
     vegaEmbed('#vis1', specVis1, {
       "actions": false
@@ -102,6 +133,30 @@
     }).catch(console.error);
 
     vegaEmbed('#vis2', specVis2, {
+      "actions": false
+    }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis3', specVis3, {
+      "actions": false
+    }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+    
+    vegaEmbed('#vis4', specVis4, {
+      "actions": false
+    }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis5', specVis5, {
+      "actions": false
+    }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis6', specVis6, {
       "actions": false
     }).then(function (result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
