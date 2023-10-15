@@ -1,5 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width" = "container",
   "description": "Donut chart for left and right-handed winners with percentage in tooltip.",
   "data": {
     "url": "https://raw.githubusercontent.com/djha0001/FIT3179/main/Mens_Tennis_Grand_Slam_Winner.csv"
