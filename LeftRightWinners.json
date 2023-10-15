@@ -53,13 +53,10 @@
       },
       "layer": [
         {
-          "params": [
-            {
-              "name": "highlight",
-              "select": {"type": "point", "on": "mouseover"}
-            },
-            {"name": "select", "select": "point"}
-          ],
+          "selection": {
+            "highlight": {"type": "single", "on": "mouseover"},
+            "select": {"type": "single"}
+          },
           "mark": {
             "type": "bar",
             "stroke": "#909090",
@@ -67,18 +64,18 @@
           },
           "encoding": {
             "fillOpacity": {
-              "condition": {"param": "select", "value": 1},
+              "condition": {"selection": "select", "value": 1},
               "value": 0.3
             },
             "strokeWidth": {
               "condition": [
                 {
-                  "param": "select",
+                  "selection": "select",
                   "empty": false,
                   "value": 3
                 },
                 {
-                  "param": "highlight",
+                  "selection": "highlight",
                   "empty": false,
                   "value": 2
                 }
@@ -157,13 +154,10 @@
       },
       "layer": [
         {
-          "params": [
-            {
-              "name": "highlight",
-              "select": {"type": "point", "on": "mouseover"}
-            },
-            {"name": "select", "select": "point"}
-          ],
+          "selection": {
+            "highlight": {"type": "single", "on": "mouseover"},
+            "select": {"type": "single"}
+          },
           "mark": {
             "type": "bar",
             "stroke": "#909090",
@@ -171,18 +165,18 @@
           },
           "encoding": {
             "fillOpacity": {
-              "condition": {"param": "select", "value": 1},
+              "condition": {"selection": "select", "value": 1},
               "value": 0.3
             },
             "strokeWidth": {
               "condition": [
                 {
-                  "param": "select",
+                  "selection": "select",
                   "empty": false,
                   "value": 3
                 },
                 {
-                  "param": "highlight",
+                  "selection": "highlight",
                   "empty": false,
                   "value": 2
                 }
