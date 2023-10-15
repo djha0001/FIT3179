@@ -21,7 +21,7 @@
       "title": "Wins",
       "axis": {"format": "s"}
     },
-    "color": {"field": "key","title": "Hand","scale": {"range": ["#675193", "#ca8861"]}},
+    "color": {"field": "key",  "title": "Hand","scale": {"range": ["#675193", "#ca8861"]}},
     "tooltip": [
       {"field": "year_interval", "title": "Year Interval"},
       {"field": "key", "title": "Handedness"},
