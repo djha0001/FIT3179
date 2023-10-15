@@ -15,7 +15,7 @@
       "encoding": {
         "x": {"timeUnit": "year", "field": "YEAR", "title": "Year"},
         "y": {"field": "EARNINGS", "type": "quantitative", "title": "Earnings"},
-        "color": {"field": "TOURNAMENT"},
+        "color": {"field": "TOURNAMENT", "scale":{"range":["#7bd8db","#ff7f00","#0073ff","#66c2a5"]}},
         "opacity": {"condition": {"selection": "Opens", "value": 1}, "value": 0.2},
         "tooltip": [
           {
