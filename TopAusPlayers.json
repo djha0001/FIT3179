@@ -1,0 +1,19 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A bubbleplot showing horsepower on x, miles per gallons on y, and binned acceleration on size.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/djha0001/FIT3179/main/Top_Australian_Winners.csv",
+    "format": {"type": "csv"}
+  },
+  "mark": "point",
+  "encoding": {
+    "y": {"field": "Wins", "type": "quantitative", "sort": "ascending"},
+    "x": {"field": "Player", "type": "nominal"},
+    "size": {"field": "Wins", "type": "quantitative"},
+    "tooltip": [
+      {"field": "Player", "type": "nominal", "title": "Player Name"},
+      {"field": "Wins", "type": "quantitative", "title": "Wins"}
+    ]
+  },
+  "config": {}
+}

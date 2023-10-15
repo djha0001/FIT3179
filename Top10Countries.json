@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Top 10 Nationalities by Wins",
+  "data": {
+    "url": "https://raw.githubusercontent.com/djha0001/FIT3179/main/Top_10_Nationalities_Wins.csv",
+    "format": {"type": "csv"}
+  },
+  "params": [{"name": "grid", "select": "interval", "bind": "scales"}],
+  "mark": "circle",
+  "encoding": {
+    "x": {
+      "field": "Wins",
+      "type": "quantitative",
+      "scale": {"domain": [0, 70]}
+    },
+    "y": {"field": "Nationality", "type": "nominal"},
+    "size": {
+      "field": "Wins",
+      "type": "quantitative",
+      "scale": {"range": [20, 200]}
+    },
+    "color": {
+      "field": "Nationality",
+      "type": "nominal",
+      "scale": {"domain": ["Australian"], "range": ["blue"]},
+      "condition": {
+        "test": "datum.Nationality !== 'Australian'",
+        "value": "gray"
+      }
+    },
+    "tooltip": [
+      {"field": "Nationality", "type": "nominal", "title": "Nationality"},
+      {"field": "Wins", "type": "quantitative", "title": "Wins"}
+    ]
+  },
+  "config": {}
+}
