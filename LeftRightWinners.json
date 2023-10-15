@@ -21,10 +21,10 @@
       "title": "Wins",
       "axis": {"format": "s"}
     },
-    "color": {"field": "Hand", "scale": {"range": ["#675193", "#ca8861"]}},
+    "color": {"field": "key","title": "Hand","scale": {"range": ["#675193", "#ca8861"]}},
     "tooltip": [
       {"field": "year_interval", "title": "Year Interval"},
-      {"field": "Hand", "title": "Handedness"},
+      {"field": "key", "title": "Handedness"},
       {"field": "value", "title": "Wins"}
     ],
     "opacity": {
@@ -33,7 +33,7 @@
     }
   },
   "selection": {
-    "legendSelection": {"type": "multi", "fields": ["Hand"], "bind": "legend"}
+    "legendSelection": {"type": "multi", "fields": ["key"], "bind": "legend"}
   },
   "config": {}
 }
