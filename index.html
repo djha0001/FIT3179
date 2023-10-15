@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title -->
+    <title>FIT3179 Assignment 2 - Olympic Games</title>
+
+    <!-- Import D3, Vega, Vega-Lite -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.8"></script>
+
+    <!-- Linking CSS & JS -->
+    <link rel="stylesheet" href="css/output.css" />
+    <script src="js/index.js"></script>
+</head>
+
+<body class="bg-slate-300">
+
+    <div class="grid lg:grid-cols-6 gap-5">
+
+        <header class="col-start-2 col-end-6 m-5 font-bold text-8xl font-mono text-center">Summer & Winter Olympic Games</header>
+
+        <div class="flex-row-reverse items-stretch col-start-2 col-end-6 m-5 p-5 bg-gray-200 rounded-md">
+            <div class="flex justify-center">
+                <!-- Insert your Vega-Lite chart here for idiom-1-1 -->
+                <div id="idiom-1-1"></div>
+                <p class="pl-7 text-center">30% of Australian Olympic Medals are <span style="color:rgb(232,200,93); font-weight: bold;">gold</span>, 32% of </p>
+                <p class="pl-7 text-center">medals are <span style="color:rgb(167,165,156); font-weight: bold;">silver</span>, and 38% of medals are <span style="color:rgb(219,165,132); font-weight: bold;">bronze</span> </p>
+            </div>
+        </div>
+
+        <div class="col-start-2 col-end-6 m-5 p-5 bg-gray-200 rounded-md">
+            <h1 class="text-center text-2xl font-bold font-['Arial']">Australia Olympic Medals Over the Years</h1>
+            <div class="flex justify-center m-5">
+                <!-- Insert your Vega-Lite chart here for idiom-2 -->
+                <div id="idiom-2"></div>
+            </div>
+
+            <p>The year 2000 was Australia's best performance in terms of Olympic medals. We won 25 <span style="color:rgb(232,200,93); font-weight: bold;">gold</span> medals, 16 <span style="color:rgb(167,165,156); font-weight: bold;">silver</span> medals, and 17 <span style="color:rgb(219,165,132); font-weight: bold;">bronze</span> medals. 
+                Could this have anything to do with it being hosted in Sydney? Sadly, our performance decreased in the years following
+                up until Tokyo 2020.</p>
+        </div>
+
+        <div class="col-start-2 col-end-6 m-5 p-5 bg-gray-200 rounded-md">
+            <h1 class="text-center text-2xl font-bold font-['Arial']">Average Age of Olympians Across Different Sports</h1>
+            <div class="flex justify-center m-10">
+                <!-- Insert your Vega-Lite chart here for idiom-3 -->
+                <div id="idiom-3"></div>
+            </div>
+
+            <p>The sport with the highest average age for <span style="color:deepskyblue; font-weight: bold;">men</span> is Roque whereas, the sports with the highest average age for <span style="color:lightpink; font-weight: bold;">women</span> are Alpinism and Art Competitions.
+                From this idiom, we can see that there existed a lot of sports that no longer exist today such as Tug-of-War and Jeu de Paume.
+            </p>
+        </div>
+
+        <div class="col-start-2 col-end-6 m-5 p-5 bg-gray-200 rounded-md bg-[url('/docs/assets/olympic_rings.png')] bg-[length:1200px_600px] bg-no-repeat bg-center ">
+            <h1 class="text-center text-2xl font-bold font-['Arial']">Height v Weight of Olympians Across Continents</h1>
+            <div class="flex justify-center m-5">
+                <!-- Insert your Vega-Lite charts for continents here -->
+                <div id="idiom-4-europe"></div>
+                <div id="idiom-4-africa"></div>
+                <div id="idiom-4-america"></div>
+            </div>
+
+            <div class="flex justify-center">
+                <div id="idiom-4-asia"></div>
+                <div id="idiom-4-oceania"></div>
+            </div>
+
+            <p>This facet shows the continents represented by the iconic Olympic rings: Europe, Africa, America, Asia , Oceania.
+                It appears that athletes from <span style="color:#00A14E; font-weight: bold;">Oceania</span> and <span style="color:black; font-weight: bold;">Africa</span> have less variation in their weight/height in comparison to their 
+                <span style="color:#007DC2; font-weight: bold;">European</span>, <span style="color:#E7314C; font-weight: bold;">American</span>, and <span style="color:#F4AB2F; font-weight: bold;">Asian</span> counterparts.
+            </p>
+        </div>
+
+        <div class="col-start-2 col-end-6 m-5 p-5 bg-gray-200 rounded-md ">
+            <div class="flex justify-center m-5">
+                <!-- Insert your Vega-Lite chart here for idiom-5 -->
+                <div id="idiom-5"></div>
+            </div>
+            
+            <p>Unsurprisingly, United States of America have accumulated the most Olympic medals over the years with an impressive 5219 medals.
+                Australia is also doing quite well considering the large population difference between Australia and the USA with 1306 medals.</p>
+        </div>
+
+        <footer class="col-start-2 col-end-6 m-5 ">
+            <p class="text-slate-400 text-center">khang dao</p>
+        </footer>
+        
+    </div>
+    
+</body>
+</html>
