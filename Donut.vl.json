@@ -35,7 +35,14 @@
         "title": "Winner Type"
       },
       {"field": "count", "type": "quantitative", "title": "Count"}
-    ]
+    ],
+    "opacity": {
+      "condition": {"selection": "legendSelection", "value": 1},
+      "value": 0.5
+    }
+  },
+  "selection": {
+    "legendSelection": {"type": "multi", "fields": ["WINNER_LEFT_OR_RIGHT_HANDED"], "bind": "legend"}
   },
   "config": {}
 }
