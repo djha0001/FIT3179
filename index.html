@@ -29,15 +29,23 @@
 
     <script>
         // Embed the visualizations using Vega-Embed
-        var specVis1 = "./Map.vl.json";
-        var specVis2 = "./TourEarnings.json";
-        var specVis3 = "./Donut.vl.json";
-        var specVis4 = "./LeftRightWinners.json";
+        var specVis1 = "Map.vl.json";
+        var specVis2 = "TourEarnings.json";
+        var specVis3 = "Donut.vl.json";
+        var specVis4 = "LeftRightWinners.json";
 
-        vegaEmbed('#vis1', specVis1, { "actions": false });
-        vegaEmbed('#vis2', specVis2, { "actions": false });
-        vegaEmbed('#vis3', specVis3, { "actions": false });
-        vegaEmbed('#vis4', specVis4, { "actions": false });
+        vegaEmbed('#vis1', specVis1, { "actions": false }).then(function(result) {
+          // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+        vegaEmbed('#vis2', specVis2, { "actions": false }).then(function(result) {
+          // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+        vegaEmbed('#vis3', specVis3, { "actions": false }).then(function(result) {
+          // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
+        vegaEmbed('#vis4', specVis4, { "actions": false }).then(function(result) {
+          // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+        }).catch(console.error);
 
         // You can add more embeddings if needed for additional visualizations
 
