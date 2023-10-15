@@ -27,7 +27,7 @@
   "mark": {"type": "arc", "innerRadius": 50},
   "encoding": {
     "theta": {"field": "count", "type": "quantitative"},
-    "color": {"field": "WINNER_LEFT_OR_RIGHT_HANDED","title":"Hand", "type": "nominal"},
+    "color": {"field": "WINNER_LEFT_OR_RIGHT_HANDED","title":"Hand", "type": "nominal","scale":{"range": ["#675193", "#ca8861"]}},
     "tooltip": [
       {
         "field": "WINNER_LEFT_OR_RIGHT_HANDED",
