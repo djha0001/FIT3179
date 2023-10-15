@@ -65,6 +65,22 @@
       display: flex;
       justify-content: space-between;
     }
+
+    /* Flex container for the 2x2 grid */
+    .grid-2x2 {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .grid-item {
+      width: calc(50% - 10px);
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+
+    .grid-item:last-child {
+      margin-right: 0;
+    }
   </style>
 </head>
 
@@ -85,6 +101,13 @@
       </div>
     </div>
 
+    <!-- Second Vega-Lite Chart -->
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <div id="vis2" class="vis-container"></div>
+      </div>
+    </div>
+
     <!-- Flex container for the third and fourth visualizations -->
     <div class="pure-g side-by-side">
       <div class="pure-u-1-2">
@@ -96,13 +119,37 @@
         <div id="vis4" class="vis-container"></div>
       </div>
     </div>
+
+    <!-- Flex container for the 2x2 grid -->
+    <div class="pure-g grid-2x2">
+      <div class="pure-u-1-2 grid-item">
+        <!-- Fifth Vega-Lite Chart -->
+        <div id="vis5" class="vis-container"></div>
+      </div>
+      <div class="pure-u-1-2 grid-item">
+        <!-- Sixth Vega-Lite Chart -->
+        <div id="vis6" class="vis-container"></div>
+      </div>
+      <div class="pure-u-1-2 grid-item">
+        <!-- Seventh Vega-Lite Chart -->
+        <div id="vis7" class="vis-container"></div>
+      </div>
+      <div class="pure-u-1-2 grid-item">
+        <!-- Eighth Vega-Lite Chart -->
+        <div id="vis8" class="vis-container"></div>
+      </div>
+    </div>
   </div>
 
   <script type="text/javascript">
     var specVis1 = "Map.vl.json";
     var specVis2 = "TourEarnings.json";
     var specVis3 = "LeftRightWinners.json";
-    var specVis4 = "Donut.vl.json"
+    var specVis4 = "Donut.vl.json";
+    var specVis5 = "Top10Aus.json";
+    var specVis6 = "Top10French.json";
+    var specVis7 = "Top10US.json";
+    var specVis8 = "Top10Wimbledon.json";
 
     vegaEmbed('#vis1', specVis1, {
       "actions": false
@@ -127,7 +174,19 @@
     }).then(function (result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
-  </script>
-</body>
 
-</html>
+    vegaEmbed('#vis5', specVis5, {
+      "actions": false
+    }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis6', specVis6, {
+      "actions": false
+    }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis7', specVis7, {
+      "actions": false
+    }).then(function (result) {
