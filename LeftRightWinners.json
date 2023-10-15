@@ -1,0 +1,38 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/djha0001/FIT3179/main/Handedness_Winners_Every_10_Years.csv"
+  },
+  "mark": {"type": "bar", "cornerRadiusTopLeft": 3, "cornerRadiusTopRight": 3},
+  "transform": [
+    {"calculate": "datum['Year Interval']", "as": "year_interval"},
+    {"fold": ["Left-Handed Winners", "Right-Handed Winners"]}
+  ],
+  "encoding": {
+    "x": {
+      "field": "year_interval",
+      "type": "ordinal",
+      "title": "Year Interval"
+    },
+    "y": {
+      "aggregate": "sum",
+      "field": "value",
+      "title": "Wins",
+      "axis": {"format": "s"}
+    },
+    "color": {"field": "key", "scale": {"range": ["#675193", "#ca8861"]}},
+    "tooltip": [
+      {"field": "year_interval", "title": "Year Interval"},
+      {"field": "key", "title": "Handedness"},
+      {"field": "value", "title": "Wins"}
+    ],
+    "opacity": {
+      "condition": {"selection": "legendSelection", "value": 1},
+      "value": 0.5
+    }
+  },
+  "selection": {
+    "legendSelection": {"type": "multi", "fields": ["key"], "bind": "legend"}
+  },
+  "config": {}
+}
