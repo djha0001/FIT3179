@@ -1,16 +1,21 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "A bar chart with highlighting on hover and selecting on click. (Inspired by Tableau's interaction style.)",
   "title": "Top 10 Wimbledon winners",
   "width": "container",
   "data": {
     "url": "https://raw.githubusercontent.com/djha0001/FIT3179/main/Combined_Top_10_Grand_Slam_Winners.csv"
   },
   "transform": [{"filter": "datum.Tournament == 'Wimbledon'"}],
-  "params": [
-    {"name": "Open", "select": {"type": "point", "on": "mouseover"}},
-    {"name": "select", "select": "point"}
-  ],
+  "selection": {
+    "Wimbledon": {
+      "type": "single",
+      "on": "mouseover",
+      "empty": "none"
+    },
+    "select": {
+      "type": "multi"
+    }
+  },
   "mark": {
     "type": "bar",
     "fill": "#66c2a5",
@@ -20,11 +25,11 @@
   "encoding": {
     "y": {"field": "Player", "type": "nominal", "sort": "-x"},
     "x": {"field": "Wins", "type": "quantitative"},
-    "fillOpacity": {"condition": {"param": "select", "value": 1}, "value": 0.3},
+    "fillOpacity": {"condition": {"selection": "select", "value": 1}, "value": 0.3},
     "strokeWidth": {
       "condition": [
-        {"param": "select", "empty": false, "value": 2},
-        {"param": "Open", "empty": false, "value": 1}
+        {"selection": "select", "empty": false, "value": 2},
+        {"selection": "Wimbledon", "empty": false, "value": 1}
       ],
       "value": 0
     },
