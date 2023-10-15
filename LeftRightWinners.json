@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": "container",
-  "title": "Left and Right Hand Winning split(1950-2020)",
+  "title":{"text":"Left and Right Hand Winners(1950-2020)", "anchor": "middle"},
   "data": {
     "values": [
       {"Year": 1950, "Left-Handed Winners": 4, "Right-Handed Winners": 36},
