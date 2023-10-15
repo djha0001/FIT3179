@@ -105,60 +105,60 @@
     <!-- Flex container for the third and fourth visualizations -->
     <div class="pure-g side-by-side">
       <div class="pure-u-1-2">
-        <!-- Third Vega-Lite Chart -->
-        <div id="vis4" class="vis-container"></div>
+        <!-- Second Vega-Lite Chart -->
+        <div id="vis2" class="vis-container"></div>
       </div>
       <div class="pure-u-1-2">
-        <!-- Fourth Vega-Lite Chart -->
+        <!-- Third Vega-Lite Chart -->
         <div id="vis9" class="vis-container"></div>
       </div>
     </div>
 
-    <!-- Second Vega-Lite Chart -->
+    <!-- Fourth Vega-Lite Chart -->
     <div class="pure-g">
       <div class="pure-u-1-1">
-        <div id="vis2" class="vis-container"></div>
+        <div id="vis4" class="vis-container"></div>
       </div>
     </div>
 
-    <!-- Third Vega-Lite Chart -->
+    <!-- Fifth Vega-Lite Chart -->
     <div class="pure-g">
       <div class="pure-u-1-1">
-        <div id="vis3" class="vis-container"></div>
+        <div id="vis5" class="vis-container"></div>
       </div>
     </div>
 
     <!-- Flex container for the 2x2 grid -->
     <div class="pure-g grid-2x2">
       <div class="pure-u-1-2">
-        <!-- Fifth Vega-Lite Chart (vis5) -->
-        <div id="vis5" class="vis-container"></div>
-      </div>
-      <div class="pure-u-1-2">
-        <!-- Sixth Vega-Lite Chart (vis6) -->
+        <!-- Sixth Vega-Lite Chart (vis5) -->
         <div id="vis6" class="vis-container"></div>
       </div>
       <div class="pure-u-1-2">
-        <!-- Seventh Vega-Lite Chart (vis7) -->
+        <!-- Seventh Vega-Lite Chart (vis6) -->
         <div id="vis7" class="vis-container"></div>
       </div>
       <div class="pure-u-1-2">
-        <!-- Eighth Vega-Lite Chart (vis8) -->
+        <!-- Eigth Vega-Lite Chart (vis7) -->
         <div id="vis8" class="vis-container"></div>
+      </div>
+      <div class="pure-u-1-2">
+        <!-- Ninth Vega-Lite Chart (vis8) -->
+        <div id="vis9" class="vis-container"></div>
       </div>
     </div>
 
 
   <script type="text/javascript">
     var specVis1 = "Map.vl.json";
-    var specVis2 = "TourEarnings.json";
-    var specVis3 = "LeftRightWinners.json";
-    var specVis4 = "Top10Countries.json";
-    var specVis5 = "Top10Aus.json";
-    var specVis6 = "Top10French.json";
-    var specVis7 = "Top10US.json";
-    var specVis8 = "Top10Wimbledon.json";
-    var specVis9 = "TopAusPlayers.json";
+    var specVis2 = "Top10Countries.json";
+    var specVis3 = "TopAusPlayers.json";
+    var specVis4 = "LeftRightWinners.json";
+    var specVis5 = "TourEarnings.json";
+    var specVis6 = "Top10Aus.json"; 
+    var specVis7 = "Top10French.json";
+    var specVis8 = "Top10US.json";
+    var specVis9 = "Top10Wimbledon.json";
 
     vegaEmbed('#vis1', specVis1, {
       "actions": false
