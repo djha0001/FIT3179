@@ -1,23 +1,30 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Grand Slam Winners by Country(%)",
-  "width": "container",
+  "width": "600",
   "height": 400,
+  "data": {
+        "url": "https://raw.githubusercontent.com/djha0001/FIT3179/main/ne_110m.json",
+        "format": {"type": "topojson", "feature":"ne_110m_admin_0_countries"}
+      },
   "projection": {"type": "equirectangular"},
   "layer": [
     {
-      "data": {
-        "url": "https://raw.githubusercontent.com/djha0001/FIT3179/main/ne_110m.json",
-        "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
-      },
-      "mark": {"type": "geoshape", "fill": "mintcream", "stroke": "black"}
+      "transform": [
+        {
+          "calculate": "'Data is not relevant'",
+          "as": "note"
+        }
+      ],
+      "mark": {"type": "geoshape", "fill": "gray","stroke": "black"},
+      "encoding": {"tooltip": {"field": "note"}}
     },
     {
       "data": {
         "url": "https://raw.githubusercontent.com/djha0001/FIT3179/main/ne_110m.json",
         "format": {"type": "topojson", "feature": "ne_110m_graticules_30-2"}
       },
-      "mark": {"type": "geoshape", "fill": "none", "stroke": "black"}
+      "mark": {"type": "geoshape", "fill": "none", "stroke": "lightgray", "strokeDash": [2, 2]}
     },
     {
       "data": {
@@ -38,7 +45,11 @@
       ],
       "mark": {"type": "geoshape"},
       "encoding": {
-        "color": {"field": "PERCENTAGE_OF_WINS", "type": "quantitative"},
+        "color": {
+          "field": "PERCENTAGE_OF_WINS",
+          "type": "quantitative",
+          "scale": {"scheme": "purpleblue"}
+        },
         "tooltip": [
           {"field": "properties.NAME", "type": "nominal", "title": "Country"},
           {
