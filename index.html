@@ -23,8 +23,7 @@
         }
 
         body {
-            background-color: lightgray;
-            border: 0;
+            background-color: white;
         }
 
         .page {
@@ -209,10 +208,19 @@
 
         <hr>
 
-        <div class="columns">
-            <div class="columnn2">
-                <div id="linechart"></div>
-            </div>
+        <!-- Flex container for the second and third visualizations -->
+        <div class="pure-g side-by-side">
+          <!-- Left Side (vis2) -->
+          <div class="pure-u-1-2">
+            <!-- Second Vega-Lite Chart -->
+            <div id="vis2" class="vis-container"></div>
+          </div>
+          <!-- Right Side (vis3) -->
+          <div class="pure-u-1-2">
+            <!-- Third Vega-Lite Chart -->
+            <div id="vis3" class="vis-container"></div>
+          </div>
+        </div>
 
             <div class="columnn2">
                 <h2>Accident Throughout The Years</h2>
