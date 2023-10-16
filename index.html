@@ -147,15 +147,15 @@
             height: 100px;
         }
 
-        .column3 {
-            width: 33%;
+        .column4 {
+            width: 25%;
             height: 400px;
             padding-left: 30px;
             padding-right: 30px;
         }
 
-        .column3desc {
-            width: 33%;
+        .column4desc {
+            width: 25%;
             height: 100px;
         }
 
@@ -247,21 +247,17 @@
 
         <hr>
 
-        <div>
-            <h2>Accident Across Metropolitan Melbourne</h2>
-        </div>
-
-        <!-- Fifth Vega-Lite Chart -->
-        <div class="pure-g">
-          <div class="pure-u-1-2">
-            <div id="vis5" class="vis-container"></div>
-          </div>
-          <div class="pure-u-1-2">
-            <div class="text-box">
-              <p>The map shows the number of crashes that happen in each Melbourne's metropolitan Local Government Area from 2015 until 2018.</p>
-              <p>Typically, the number of accidents corresponds to the size of the LGA. The highest number of accidents happened in Melbourne City, and the lowest in Nillumbik Shire.</p>
+        <div class="columns">
+            <div class="columnn2">
+                <div id="vis5"></div>
             </div>
-          </div>
+
+            <div class="columnn2">
+                <h2>Accident Throughout The Years</h2>
+                <p>There tends to be a downtrend in the start and the end of the year. The number of crash
+                    has been decreasing in recent years.
+                </p>
+            </div>
         </div>
 
         <hr>
@@ -270,43 +266,45 @@
             <h2>Accident Information</h2>
         </div>
 
+        <div class="columns">
+            <div class="column4">
+                <div id="vis6"></div>
+            </div>
 
-        <!-- Flex container for the 2x2 grid -->
-        <div class="pure-g grid-2x2">
-          <div class="pure-u-1-2">
-            <!-- Sixth Vega-Lite Chart (vis5) -->
-            <div id="vis6" class="vis-container"></div>
-          </div>
-          <div class="pure-u-1-2">
-            <!-- Seventh Vega-Lite Chart (vis6) -->
-            <div id="vis7" class="vis-container"></div>
-          </div>
-          <div class="pure-u-1-2">
-            <!-- Eigth Vega-Lite Chart (vis7) -->
-            <div id="vis8" class="vis-container"></div>
-          </div>
-          <div class="pure-u-1-2">
-            <!-- Ninth Vega-Lite Chart (vis8) -->
-            <div id="vis9" class="vis-container"></div>
-          </div>
+            <div class="column4">
+                <div id="vis7"></div>
+            </div>
+
+            <div class="column4">
+                <div id="vis8"></div>
+            </div>
+
+            <div class="column4">
+                <div id="vis9"></div>
+            </div>
         </div>
 
         <div class="columns">
-            <div class="column3desc">
+            <div class="column4desc">
                 <p>Collision with vehicle has been the highest accident type on every year with more than 5 times
                     compared to collision with a fixed object.</p>
             </div>
 
 
-            <div class="column3desc">
+            <div class="column4desc">
                 <p> Accident happend more frequently in the daytime especially in the late afternoon. Late evening has
                     more accidents compared to after midnight.</p>
             </div>
 
 
-            <div class="column3desc">
+            <div class="column4desc">
                 <p>Most of the accident did not result in fatal or serious injury.</p>
             </div>
+
+            <div class="column4desc">
+                <p>Most of the accident did not result in fatal or serious injury.</p>
+            </div>
+            
 
         </div>
 
