@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Grand Slam Winners by Country(%)",
+  "title": "Percentage of Grand Slams won by Country(1950-2020)",
   "width": "container",
   "height": 400,
   "data": {
