@@ -142,6 +142,11 @@
             width: 100%;
         }
 
+        .column2desc {
+            width: 50%;
+            height: 100px;
+        }
+
         .column3 {
             width: 33%;
             height: 400px;
@@ -189,7 +194,7 @@
           </div>
         </div>
 
-        <div class="pure-u-1">
+        <!--<div class="pure-u-1">
             <p>The map shows the number of crashes that happen in each Melbourne's metropolitan Local Government Area
                 from 2015
                 until 2018.
@@ -199,14 +204,25 @@
                 accident
                 happend in Melbourne City and the lowest in Nillumbik Shire.
             </p>
+        </div>-->
+
+        <div class="columns">
+            <div class="column2desc">
+                <p>Collision with vehicle has been the highest accident type on every year with more than 5 times
+                    compared to collision with a fixed object.</p>
+            </div>
+
+
+            <div class="column2desc">
+                <p> Accident happend more frequently in the daytime especially in the late afternoon. Late evening has
+                    more accidents compared to after midnight.</p>
+            </div>
         </div>
 
         <hr>
             <div class="columnn2">
                 <h2>Accident Throughout The Years</h2>
-                <p>There tends to be a downtrend in the start and the end of the year. The number of crash
-                    has been decreasing in recent years.
-                </p>
+                
             </div>
     
             <div class="pure-g side-by-side">
@@ -220,6 +236,9 @@
                 <!-- Third Vega-Lite Chart -->
                 <div id="vis3" class="vis-container"></div>
               </div>
+                <p>There tends to be a downtrend in the start and the end of the year. The number of crash
+                    has been decreasing in recent years.
+                </p>
             </div>
 
         <hr>
