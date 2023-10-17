@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Top 10 Nationalities by Wins",
+  "title": "Top 10 Nations to Win Grand Slams",
   "width": "container",
   "data": {
     "url": "https://raw.githubusercontent.com/djha0001/FIT3179/main/Top_10_Nationalities_Wins.csv",
