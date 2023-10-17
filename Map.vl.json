@@ -12,7 +12,7 @@
     {
       "transform": [
         {
-          "calculate": "'Data is not relevant'",
+          "calculate": "'This country does not have a player that won a Grand Slam'",
           "as": "note"
         }
       ],
